@@ -1,11 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
+
 import Link from "next/link";
 import { CardTitle, CardDescription, CardHeader, CardFooter, Card } from "@/components/ui/card";
 import { JSX, SVGProps } from "react";
 import Image from 'next/image';
+import { useContactModal } from "../../../store/use-contact-modal";
 
 
 export default function Component() {
+
+    const { open } = useContactModal()
+
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center bg-[#1b5e20] text-white">
@@ -23,7 +29,7 @@ export default function Component() {
           <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
             Connexion
           </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#" onClick={open}>
             Contact
           </Link>
         </nav>
