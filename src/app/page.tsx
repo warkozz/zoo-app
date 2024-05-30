@@ -1,12 +1,25 @@
-// src/app/page.tsx
+"use client";
 
-import React from 'react';
-import ZooComponentsMainPage from "../components/component/zoo-components-main-page";
+import Header from '../components/component/header';
+import Home from '../components/component/home';
+import Habitats from '../components/component/habitats';
+import { CarouselleForm } from '../components/component/carouselle-form';
+import Services from '../components/component/services';
+import Avis from '../components/component/avis';
+import Footer from '../components/component/footer';
 
-export default function Home() {
+export default function Component() {
   return (
-    <div>
-      <ZooComponentsMainPage />
+    <div className="flex flex-col min-h-[100dvh]">
+      <Header />
+      <main className="flex-1">
+        <Home />
+        <Habitats />
+        <CarouselleForm />
+        <Services />
+        <Avis />
+      </main>
+      <Footer />
     </div>
   );
 }

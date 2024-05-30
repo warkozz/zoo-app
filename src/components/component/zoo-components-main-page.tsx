@@ -6,7 +6,7 @@ import { CardTitle, CardDescription, CardHeader, CardFooter, Card } from "@/comp
 import { JSX, SVGProps } from "react";
 import Image from 'next/image';
 import { useContactModal } from "../../../store/use-contact-modal";
-
+import { CarouselleForm } from "../component/carouselle-form";
 
 export default function Component() {
 
@@ -110,6 +110,10 @@ export default function Component() {
             </div>
           </div>
         </section>
+
+        {/* Insérez le composant "CarouselleForm" où vous le souhaitez */}
+      <CarouselleForm />
+      
         <section className="w-full py-12 md:py-24 lg:py-32 bg-[#f1f8e9]">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
