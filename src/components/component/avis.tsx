@@ -3,6 +3,7 @@
 
 import { CardTitle, CardDescription, CardHeader, CardFooter, Card } from "@/components/ui/card";
 import Image from 'next/image';
+import { ButtonAvis } from "../component/button-avis";
 
 export default function Avis() {
   return (
@@ -75,6 +76,7 @@ export default function Avis() {
                 </div>
               </CardFooter>
             </Card>
+            <ButtonAvis />
           </div>
           <Image
             alt="Avis"
