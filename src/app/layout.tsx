@@ -24,6 +24,7 @@ const RootLayout = ({
       <body className={inter.className}>
         {/* Tous les composants doivent être à l'intérieur du body */}
         <ContactForm />
+        <ConnexionButton/>
         {children}
         <PanelAdmin/>
       </body>
