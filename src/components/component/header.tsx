@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import Link from "next/link";
 import { JSX, SVGProps } from "react";
-import { useContactModal } from "../../../store/use-contact-modal";
+import { useContactModal } from "../../store/use-contact-modal";
 import { ConnexionButtonV2 } from './connexion-button-v2';
 
 export default function HeaderPage() {
