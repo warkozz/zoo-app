@@ -20,7 +20,7 @@ export default function Component() {
   }, []); // Exécuter une seule fois lors du montage du composant
 
   return (
-    <div className="flex flex-col min-h-[100vh]">
+    <div className="bg-white flex flex-col min-h-[100vh]">
       <Header />
       <main className="flex-1">
         <Home />

@@ -28,8 +28,8 @@ export function CarouselleForm() {
 
   return (
     <>
-      <section data-aos="fade-up" className="bg-[#f1f8e9]">
-        <div className="max-w-6xl mx-auto px-4 py-12 md:px-6 lg:py-16">
+      <section className="bg-[#f1f8e9]">
+        <div data-aos="fade-up" className="max-w-6xl mx-auto px-4 py-12 md:px-6 lg:py-16">
           <div className="flex flex-col items-center justify-center space-y-6 md:space-y-8 lg:space-y-10">
             <div className="inline-block rounded-lg bg-[#e8f5e9] px-3 py-1 text-sm text-[#388e3c] dark:bg-[#1b5e20]">
               Nos Animaux

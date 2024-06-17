@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 export default function Services() {
   return (
-    <section data-aos="fade-up" id="services" className="w-full py-12 md:py-24 lg:py-32 bg-white">
-      <div className="container px-4 md:px-6">
+    <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-white">
+      <div data-aos="fade-up" className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <div className="inline-block rounded-lg bg-[#e8f5e9] px-3 py-1 text-sm text-[#388e3c] dark:bg-[#1b5e20]">
