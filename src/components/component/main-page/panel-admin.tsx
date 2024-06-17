@@ -9,8 +9,8 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
 import { JSX, SVGProps } from "react";
 import Image from "next/image";
-import CustomImage from "./CustomImage";
-import { ButtonModifRole } from "./button-modif-role";
+import CustomImage from "../event-page/CustomImage";
+import { ButtonModifRole } from "../event-page/button-modif-role";
 
 export default function PanelAdmin() {
   return (

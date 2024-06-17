@@ -6,13 +6,30 @@ import Image from 'next/image';
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import { useState, useEffect } from "react";
 
 
 export function CarouselleForm() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 640); // Changer la largeur selon vos besoins
+    };
+
+    handleResize(); // Vérifier la taille initiale au chargement de la page
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
-    <section className="bg-[#f1f8e9]">
-        <div className="max-w-6xl mx-auto px-4 py-12 md:px-6 lg:py-16 ">
+      <section data-aos="fade-up" className="bg-[#f1f8e9]">
+        <div className="max-w-6xl mx-auto px-4 py-12 md:px-6 lg:py-16">
           <div className="flex flex-col items-center justify-center space-y-6 md:space-y-8 lg:space-y-10">
             <div className="inline-block rounded-lg bg-[#e8f5e9] px-3 py-1 text-sm text-[#388e3c] dark:bg-[#1b5e20]">
               Nos Animaux
@@ -66,15 +83,15 @@ export function CarouselleForm() {
                     <div className="flex-1 space-y-4">
                       <div>
                         <h3 className="text-2xl font-bold">Ours Polaire</h3>
-                        <p className="text-[#388e3c] dark:text-[#c8e6c9]text-[#388e3c] dark:text-[#c8e6c9]">Ursus maritimus</p>
+                        <p className="text-[#388e3c] dark:text-[#c8e6c9]">Ursus maritimus</p>
                       </div>
                       <div>
                         <h4 className="text-lg font-semibold">Habitat</h4>
-                        <p className="text-[#388e3c] dark:text-[#c8e6c9]text-[#388e3c] dark:text-[#c8e6c9]">Banquise et zones côtières de l'Arctique</p>
+                        <p className="text-[#388e3c] dark:text-[#c8e6c9]">Banquise et zones côtières de l'Arctique</p>
                       </div>
                       <div>
                         <h4 className="text-lg font-semibold">État de Santé</h4>
-                        <p className="text-[#388e3c] dark:text-[#c8e6c9]text-[#388e3c] dark:text-[#c8e6c9]">Vulnérable</p>
+                        <p className="text-[#388e3c] dark:text-[#c8e6c9]">Vulnérable</p>
                       </div>
                     </div>
                   </Card>
@@ -107,8 +124,8 @@ export function CarouselleForm() {
                   </Card>
                 </CarouselItem>
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              {!isMobile && <CarouselPrevious />}
+              {!isMobile && <CarouselNext />}
             </Carousel>
           </div>
         </div>

@@ -5,7 +5,7 @@ import { DialogTrigger, DialogTitle, DialogDescription, DialogHeader, DialogFoot
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useContactModal } from "../../store/use-contact-modal";
+import { useContactModal } from "../../../store/use-contact-modal";
 import { useEffect, useState } from "react";
 
 export function ContactForm() {

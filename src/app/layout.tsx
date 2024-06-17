@@ -4,8 +4,8 @@ import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
-import { ContactForm } from "@/components/component/contact-form";
-import PanelAdmin from "@/components/component/panel-admin";
+import { ContactForm } from "@/components/component/event-page/contact-form"
+// import PanelAdmin from "@/components/component/panel-admin";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +24,7 @@ const RootLayout = ({
         {/* Tous les composants doivent être à l'intérieur du body */}
         <ContactForm />
         {children}
-        <PanelAdmin/>
+       {/* <PanelAdmin/> */}
       </body>
     </html>
   );
