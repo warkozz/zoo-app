@@ -9,6 +9,7 @@ import Avis from '../components/component/main-page/avis';
 import Footer from '../components/component/main-page/footer';
 import AOS from "aos";
 import "aos/dist/aos.css"; // Importez les styles CSS d'AOS
+import { ButtonHome } from "@/components/component/event-page/button-home-back";
 
 export default function Component() {
   useEffect(() => {
@@ -28,6 +29,7 @@ export default function Component() {
         <CarouselleForm />
         <Services />
         <Avis />
+        <ButtonHome/>
       </main>
       <Footer />
     </div>
