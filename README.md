@@ -17,7 +17,7 @@
 ## Installation
 1. Clonez le dépôt :
     ```bash
-    git clone https://github.com/votre-utilisateur/votre-repo.git
+    git clone https://github.com/warkozz/zoo-app
     cd votre-repo
     ```
 

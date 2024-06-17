@@ -6,7 +6,6 @@ import Head from "next/head";
 import "./globals.css";
 import { ContactForm } from "@/components/component/contact-form";
 import PanelAdmin from "@/components/component/panel-admin";
-import { ConnexionButton } from "@/components/component/connexion-button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +23,6 @@ const RootLayout = ({
       <body className={inter.className}>
         {/* Tous les composants doivent être à l'intérieur du body */}
         <ContactForm />
-        <ConnexionButton/>
         {children}
         <PanelAdmin/>
       </body>
