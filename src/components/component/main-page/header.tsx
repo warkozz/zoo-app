@@ -70,7 +70,7 @@ export default function HeaderPage() {
 
       {/* Menu mobile */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden fixed top-14 left-0 right-0 bg-[#1b5e20] text-white py-4">
+        <div className="lg:hidden top-14 left-0 right-0 bg-[#1b5e20] text-white py-4 z-10 absolute ">
           <div className="flex flex-col gap-4 sm:gap-6 items-center">
             <Link
               className="text-sm font-medium hover:underline underline-offset-4"
