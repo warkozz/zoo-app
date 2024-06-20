@@ -3,7 +3,7 @@
 
 import { CardTitle, CardDescription, CardHeader, CardFooter, Card } from "@/components/ui/card";
 import Image from 'next/image';
-import { ButtonNotice } from "../event-page/button-avis";
+import { ButtonNotice } from "../event-page/button-notice";
 
 export default function Notice() {
   return (
