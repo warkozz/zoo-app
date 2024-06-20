@@ -5,7 +5,7 @@ import Home from '../components/component/main-page/home';
 import Habitats from '../components/component/main-page/habitats';
 import { CarouselleForm } from '../components/component/main-page/carouselle-form';
 import Services from '../components/component/main-page/services';
-import Avis from '../components/component/main-page/avis';
+import Notice from '../components/component/main-page/notice';
 import Footer from '../components/component/main-page/footer';
 import AOS from "aos";
 import "aos/dist/aos.css"; // Importez les styles CSS d'AOS
@@ -28,7 +28,7 @@ export default function Component() {
         <Habitats />
         <CarouselleForm />
         <Services />
-        <Avis />
+        <Notice />
         <ButtonHome/>
       </main>
       <Footer />

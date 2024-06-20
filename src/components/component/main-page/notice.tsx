@@ -3,9 +3,9 @@
 
 import { CardTitle, CardDescription, CardHeader, CardFooter, Card } from "@/components/ui/card";
 import Image from 'next/image';
-import { ButtonAvis } from "../event-page/button-avis";
+import { ButtonNotice } from "../event-page/button-avis";
 
-export default function Avis() {
+export default function Notice() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-[#f1f8e9]">
       <div data-aos="fade-up" className="container px-4 md:px-6">
@@ -76,7 +76,7 @@ export default function Avis() {
                 </div>
               </CardFooter>
             </Card>
-            <ButtonAvis />
+            <ButtonNotice />
           </div>
           <Image
             alt="Avis"
