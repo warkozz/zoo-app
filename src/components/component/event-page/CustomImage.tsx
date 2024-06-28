@@ -1,4 +1,3 @@
-// components/CustomImage.tsx
 
 import NextImage, { ImageProps } from "next/image";
 

@@ -21,7 +21,7 @@ const RootLayout = ({
         <meta name="description" content="Bienvenue sur le Site du Zoo D'Arcadia" />
       </Head>
       <body className={inter.className}>
-        {/* Tous les composants doivent être à l'intérieur du body */}
+        {}
         <ContactForm />
         {children}
        {/* <PanelAdmin/> */}

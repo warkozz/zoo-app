@@ -14,11 +14,10 @@ export function CarouselleForm() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 640); // Changer la largeur selon vos besoins
+      setIsMobile(window.innerWidth <= 640); 
     };
 
-    handleResize(); // Vérifier la taille initiale au chargement de la page
-
+    handleResize(); 
     window.addEventListener('resize', handleResize);
 
     return () => {

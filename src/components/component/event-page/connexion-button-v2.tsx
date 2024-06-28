@@ -49,7 +49,7 @@ export function ConnexionButtonV2({ isOpen, onClose }: { isOpen: boolean, onClos
           <Button
             className="bg-[rgb(27,94,32)] text-white hover:bg-[rgb(20,70,24)] focus:ring-[rgb(27,94,32)]"
             type="submit"
-            onClick={onClose} // Close modal when clicking this button
+            onClick={onClose}
           >
             <span className="text-sm font-medium">Connexion</span>
           </Button>

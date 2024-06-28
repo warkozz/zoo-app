@@ -8,17 +8,17 @@ import Services from '../components/component/main-page/services';
 import Notice from '../components/component/main-page/notice';
 import Footer from '../components/component/main-page/footer';
 import AOS from "aos";
-import "aos/dist/aos.css"; // Importez les styles CSS d'AOS
+import "aos/dist/aos.css";
 import { ButtonHome } from "@/components/component/event-page/button-home-back";
 
-export default function Component() {
+export default function MainPage() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Optionnel : durée de l'animation en millisecondes
-      easing: "ease-in-out", // Optionnel : type d'animation
-      once: true, // Optionnel : exécuter l'animation une seule fois
+      duration: 1000, 
+      easing: "ease-in-out", 
+      once: true, 
     });
-  }, []); // Exécuter une seule fois lors du montage du composant
+  }, []); 
 
   return (
     <div className="bg-white flex flex-col min-h-[100vh]">
