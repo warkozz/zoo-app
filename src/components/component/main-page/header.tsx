@@ -2,7 +2,7 @@
 import { JSX, SVGProps, useState } from 'react';
 import Link from 'next/link';
 import { useContactModal } from '../../../store/use-contact-modal';
-import { ConnexionButtonV2 } from '../event-page/connexion-button-v2';
+import { ConnexionButtonV2 } from '../login/connexion-button-v2';
 
 export default function HeaderPage() {
   const { open: openContactModal } = useContactModal();
