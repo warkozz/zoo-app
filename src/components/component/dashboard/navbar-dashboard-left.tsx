@@ -163,7 +163,7 @@ export function NavbarDashboardLeft() {
           <TooltipProvider>
             <Link
               href="#"
-              className="group flex h-9 w-9 shrink-0 items-center justify-center gap-2 rounded-full bg-gray-900 text-lg font-semibold text-gray-50 md:h-8 md:w-8 md:text-base dark:bg-gray-50 dark:text-gray-900"
+              className="group flex h-9 w-9 shrink-0 items-center justify-center gap-2 rounded-full bg-[rgb(27,94,32)] text-lg font-semibold text-gray-50 md:h-8 md:w-8 md:text-base dark:bg-gray-50 dark:text-gray-900"
               prefetch={false}
             >
               <DatabaseIcon className="h-4 w-4 transition-all group-hover:scale-110" />
