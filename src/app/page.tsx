@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, { useEffect } from "react";
 import Header from '../components/component/main-page/header';
 import Home from '../components/component/main-page/home';
